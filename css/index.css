@@ -1240,14 +1240,39 @@ footer {
 
 /* TEAM */
 
-@media (max-width: 768px) {
-    .team__content {
-        grid-template-columns: 1fr;
+.news__content .col-xl-7 {
+    margin-left: 0;
+    /* Reset the left margin for larger screens */
+}
+
+@media (max-width: 991px) {
+    .news__content .col-xl-7 {
+        width: 100%;
+        margin-left: 0;
+        /* Reset the left margin for medium screens */
     }
-    .team__item img {
-        width: 80%;
+    .news__content .img2 {
+        width: 100%;
+        height: auto;
+        /* Adjust height to maintain aspect ratio */
+        margin-left: 0;
+        /* Reset the left margin for medium screens */
     }
-    .team__item h3 {
-        font-size: 1rem;
+}
+
+@media (max-width: 767px) {
+    .news__content .row {
+        flex-direction: column;
+        /* Stack the columns vertically on smaller screens */
+    }
+    .news__content .img2 {
+        width: 100%;
+        /* Set the image to take up full width on smaller screens */
+        max-width: 300px;
+        /* Set a maximum width for the image */
+        height: auto;
+        /* Adjust height to maintain aspect ratio */
+        margin-left: 0;
+        /* Reset the left margin for smaller screens */
     }
 }
