@@ -95,7 +95,7 @@ html *::-webkit-scrollbar-track {
 
 .header__top {
     background-image: linear-gradient(to right, #4786fe, #52c7e9, #4d73ff);
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .header__top a {
@@ -1275,32 +1275,32 @@ footer {
         margin-left: 0;
         /* Reset the left margin for smaller screens */
     }
-}@media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .team__content {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         /* Adjust the minmax values as needed for smaller screens */
     }
 }
 
+
 /* Add a media query for screens with a maximum width of 480px */
+
 @media (max-width: 480px) {
     .team {
         padding: 30px 0;
     }
-    
     .team__item h3 {
         font-size: 1rem;
     }
-    
     .team__item p {
         font-size: 0.75rem;
         line-height: 24px;
     }
-
     .team__item img {
         width: 100%;
     }
-    
     .team__title,
     .team__details {
         width: 100%;
