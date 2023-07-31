@@ -102,7 +102,14 @@ html *::-webkit-scrollbar-track {
     text-decoration: none;
     color: white;
     transition: all 0.5s;
+    
 }
+.header__left a {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    margin-right: 10px;
+  }
 
 .header__right a {
     width: 30px;
@@ -419,8 +426,9 @@ html *::-webkit-scrollbar-track {
 
 .team {
     background-image: url("../img/background-team.png");
-    background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 70px 0;
 }
 
 .team .heading p::after {
