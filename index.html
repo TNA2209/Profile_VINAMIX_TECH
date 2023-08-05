@@ -66,14 +66,14 @@
                         <a class="nav-link" href="#">Trang Chủ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Dịch Vụ</a>
+                        <a class="nav-link" href="./service.html">Dịch Vụ</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#">Đối Tác</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Hồ Sơ Năng Lực</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Về VT</a>
                     </li>
@@ -82,7 +82,7 @@
                 Sản Phẩm
               </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Smart door lock</a>
+                            <a class="dropdown-item" href="./product.html">Smart door lock</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -407,7 +407,7 @@
     </section>
 
     <!-- OFFER -->
-    <section class="offer section">
+    <section class="offer section" id="offer">
         <div class="heading">
             <h2>Chúng Tôi Cung Cấp Những Gì?</h2>
             <p></p>
@@ -428,7 +428,7 @@
                         <img src="./img/web-development.png " alt="icon-web" />
                         <h3>WEBSITE</h3>
                         <p>
-                            Cung cấp nhiều loại website: website công ty, website cá nhân, website bán hàng, website rao vặt,
+                            Cung cấp nhiều loại website: website công ty, website cá nhân, website bán hàng, website rao vặt
                         </p>
                     </div>
                 </div>
@@ -860,13 +860,12 @@
             const navItems = document.querySelector('.nav-item')
 
             navItems.forEach((navItem, index) => {
-                navItem.onclick = function () {
+                navItem.onclick = function() {
                     $('.nav-item.active').classList.remove('active')
 
                     this.classList.add('active')
                 }
             })
-
         </script>
 
         <!-- quick-call -->
@@ -901,19 +900,19 @@
                     <p>Hotline</p>
                 </a>
             </div>
-    
+
             <div class="bottom-menu__zalo">
                 <a href="https://zalo.me/841275222263">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
                 </a>
             </div>
-    
+
             <div class="bottom-menu__messenger">
                 <a href="#">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="messenger-icon">
                 </a>
             </div>
-    
+
             <div class="bottom-menu__profile">
                 <a href="#">
                     <i class="fa-solid fa-file-invoice"></i>

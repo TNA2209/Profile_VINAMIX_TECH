@@ -34,7 +34,7 @@ html *::-webkit-scrollbar-track {
 }
 
 .heading h2 {
-    font-size: 2rem;
+    font-size: 3.2rem;
     color: var(--primary-color);
     font-weight: bold;
     letter-spacing: 0.5px;
