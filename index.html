@@ -32,6 +32,19 @@
     <link rel="stylesheet" href="./css/base.css" />
     <!-- Responsive -->
     <link rel="stylesheet" href="./css/responsive.css">
+
+    <script src="contact.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        // process.evn
+        emailjs.init("H-Reqc36kbLoQRG8K");
+      })();
+    </script>
 </head>
 
 <body>
@@ -47,14 +60,14 @@
                 </a>
             </div>
             <div class="header__right">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100095344400869"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <a href="#"><i class="fab fa-tiktok"></i></a>
                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
         <nav class="navInstruction navbar navbar-expand-md container">
-            <a class="navbar-brand text-center" href="#">
+            <a class="navbar-brand text-center" href="./index.html">
                 <img src="./img/logo-primary.png" alt="logo-primary" class="img-fluid" style="max-width: 80px" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarInstruction" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -75,14 +88,27 @@
                         <a class="nav-link" href="#">Hồ Sơ Năng Lực</a>
                     </li> -->
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Về VT</a>
+                        <a class="nav-link" href="./aboutUs.html">Về VT</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Sản Phẩm
-              </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="./product.html">Smart door lock</a>
+                        <a
+                          class="nav-link dropdown-toggle"
+                          href="#"
+                          id="navbarDropdownMenuLink"
+                          role="button"
+                          data-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false"
+                        >
+                          Sản Phẩm
+                        </a>
+                        <div
+                          class="dropdown-menu"
+                          aria-labelledby="navbarDropdownMenuLink"
+                        >
+                          <a class="dropdown-item" href="./product.html"
+                            >Smart door lock</a
+                          >
                         </div>
                     </li>
                     <li class="nav-item">
@@ -91,6 +117,7 @@
                 </ul>
             </div>
         </nav>
+        <div class="hr-head"></div>
     </header>
 
     <!-- CAROUSEL -->
@@ -407,7 +434,7 @@
     </section>
 
     <!-- OFFER -->
-    <section class="offer section" id="offer">
+    <section class="offer section">
         <div class="heading">
             <h2>Chúng Tôi Cung Cấp Những Gì?</h2>
             <p></p>
@@ -428,7 +455,7 @@
                         <img src="./img/web-development.png " alt="icon-web" />
                         <h3>WEBSITE</h3>
                         <p>
-                            Cung cấp nhiều loại website: website công ty, website cá nhân, website bán hàng, website rao vặt
+                            Cung cấp nhiều loại website: website công ty, website cá nhân, website bán hàng, website rao vặt,
                         </p>
                     </div>
                 </div>
@@ -660,14 +687,14 @@
               </div>
               <div class="footer__contact">
                 <i class="far fa-envelope"></i>
-                <a href="mailto:info@trannamanh.edu.vn "
+                <a href="mailto:ts.solutions.tech@gmail.com"
                   >ts.solutions.tech@gmail .com</a
                 >
               </div>
               <div class="footer__contact">
                 <i class="fas fa-phone-alt"></i>
-                <a href="tel:0961051014 ">081.522.2263</a>
-                </div>
+                <a href="tel:0815222263 ">081.522.2263</a>
+              </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
                 <h3>Dịch vụ</h3>
@@ -704,23 +731,27 @@
                 <h3>Danh mục</h3>
                 <div class="footer__link">
                     <i class="fa fa-long-arrow-alt-right"></i>
-                    <a href="# ">Dịch vụ</a>
+                    <a href="./service.html">Dịch vụ</a>
+                </div>
+                <!-- <div class="footer__link">
+                    <i class="fa fa-long-arrow-alt-right"></i>
+                    <a href="#">Đối tác</a>
                 </div>
                 <div class="footer__link">
                     <i class="fa fa-long-arrow-alt-right"></i>
-                    <a href="# ">Đối tác</a>
-                </div>
+                    <a href="#">Hồ sơ năng lực</a>
+                </div> -->
                 <div class="footer__link">
                     <i class="fa fa-long-arrow-alt-right"></i>
-                    <a href="# ">Hồ sơ năng lực</a>
-                </div>
-                <div class="footer__link">
-                    <i class="fa fa-long-arrow-alt-right"></i>
-                    <a href="# ">Sản phẩm</a>
+                    <a href="./product.html">Sản phẩm</a>
                 </div>
                 <div class="footer__link">
                     <i class="fa fa-long-arrow-alt-right"></i>
                     <a href="./contact.html">Liên hệ</a>
+                </div>
+                <div class="footer__link">
+                    <i class="fa fa-long-arrow-alt-right"></i>
+                    <a href="./aboutUs.html">Về VinamixTech</a>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3">
@@ -728,29 +759,26 @@
                 <div class="footer__link">
                     <a href="# ">Để lại thông tin</a>
                 </div>
-                <textarea class="quick-contact__input" rows="4 " placeholder="Mô tả ngắn ý tưởng của bạn... "></textarea>
-                <input type="text " class="quick-contact__input" placeholder="Lĩnh vực kinh doanh " />
-                <select class="quick-contact__input" placeholder="kinh phí dự kiến ">
-                <option value="50 -> 100 triệu">kinh phí dự kiến</option>
-                <option value="50 -> 100 triệu">0 -&gt; 50 triệu</option>
-                <option value="50 -> 100 triệu">50 -&gt; 100 triệu</option>
-                <option value="50 -> 100 triệu">100 -&gt; 150 triệu</option>
-                <option value="50 -> 100 triệu">150 -&gt; 200 triệu</option>
-                <option value="50 -> 100 triệu">200 -&gt; 250 triệu</option>
-                <option value="50 -> 100 triệu">250 -&gt; 300 triệu</option>
-                <option value="50 -> 100 triệu">300 -&gt; 350 triệu</option>
-                <option value="50 -> 100 triệu">350 -&gt; 400 triệu</option>
-                <option value="50 -> 100 triệu">&gt; 400 triệu</option>
-              </select>
+                <textarea class="quick-contact__input" rows="4 " placeholder="Mô tả ngắn ý tưởng của bạn..."></textarea>
+                <input type="text " class="quick-contact__input" placeholder="Lĩnh vực kinh doanh" />
+                <select class="quick-contact__input" placeholder="kinh phí dự kiến">
+                    <option value="kinh phí dự kiến">kinh phí dự kiến</option>
+                    <option value="0 -&gt; 50 triệu">0 -&gt; 50 triệu</option>
+                    <option value="50 -&gt; 100 triệu">50 -&gt; 100 triệu</option>
+                    <option value="100 -&gt; 150 triệu">100 -&gt; 150 triệu</option>
+                    <option value="150 -&gt; 200 triệu">150 -&gt; 200 triệu</option>
+                    <option value="200 -&gt; 250 triệu">200 -&gt; 250 triệu</option>
+                    <option value="250 -&gt; 300 triệu">250 -&gt; 300 triệu</option>
+                    <option value="300 -&gt; 350 triệu">300 -&gt; 350 triệu</option>
+                    <option value="350 -&gt; 400 triệu">350 -&gt; 400 triệu</option>
+                    <option value="> 400 triệu">&gt; 400 triệu</option>
+                </select>
+                <input type="email" class="quick-contact__input" placeholder="Email">
                 <div class="quick-contact__form">
-                    <input type="number" class="quick-contact__input" placeholder="Số điện thoại" />
-                    <button class="quick-contact__button">
-                  <img
-                    class="quick-contact__img"
-                    src="./img/paper.png"
-                    alt="icon-paper"
-                  />
-                </button>
+                    <input type="tel" class="quick-contact__input" placeholder="Số điện thoại">
+                    <button class="quick-contact__button" onclick="sendEmail()">
+                        <img class="quick-contact__img" src="./img/paper.png" alt="icon">
+                    </button>
                 </div>
             </div>
         </div>
@@ -860,12 +888,13 @@
             const navItems = document.querySelector('.nav-item')
 
             navItems.forEach((navItem, index) => {
-                navItem.onclick = function() {
+                navItem.onclick = function () {
                     $('.nav-item.active').classList.remove('active')
 
                     this.classList.add('active')
                 }
             })
+
         </script>
 
         <!-- quick-call -->
@@ -884,13 +913,13 @@
             <div class="quick-alo__border"></div>
         </div>
 
-        <div class="quick-alo-mes hide-on-mobile">
+        <!-- <div class="quick-alo-mes hide-on-mobile">
             <a href="#" title="Messenger">
                 <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="zalo-icon">
             </a>
             <div class="quick-alo__fill"></div>
             <div class="quick-alo__border"></div>
-        </div>
+        </div> -->
 
         <!-- BOTTOM MENU MOBILE -->
         <div class="bottom-menu hide-on-tablet hide-on-lag">
@@ -900,19 +929,19 @@
                     <p>Hotline</p>
                 </a>
             </div>
-
+    
             <div class="bottom-menu__zalo">
                 <a href="https://zalo.me/841275222263">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Icon_of_Zalo.svg" alt="zalo-icon">
                 </a>
             </div>
-
-            <div class="bottom-menu__messenger">
+    
+            <!-- <div class="bottom-menu__messenger">
                 <a href="#">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/b/be/Facebook_Messenger_logo_2020.svg" alt="messenger-icon">
                 </a>
-            </div>
-
+            </div> -->
+    
             <div class="bottom-menu__profile">
                 <a href="#">
                     <i class="fa-solid fa-file-invoice"></i>
