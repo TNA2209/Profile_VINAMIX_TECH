@@ -1,56 +1,53 @@
-.card {
+.card__product {
   width: 65%;
   margin: 40px auto;
   border: none;
 }
-.card .card__right {
-  margin-left: 20px;
-}
-.card .card__top img {
-  width: 500px;
-  height: 350px;
+
+.card__product .card__top img {
+  width: 250px;
+  height: 300px;
 }
 
-.card .card__right .card-body {
+.card__product .card__right .card-body {
   padding-bottom: 0;
 }
-.card .card__right .card-title {
+.card__product .card__right .card-title {
   font-size: 24px;
   font-weight: 700;
   inline-size: 70%;
 }
 
-.card .card__right .card__price-first {
+.card__product .card__right .card__price-first {
   text-decoration: line-through;
   font-size: 20px;
   color: #777777;
   margin-right: 15px;
   font-weight: 500;
 }
-.card .card__right .card__price-second {
+.card__product .card__right .card__price-second {
   font-size: 20px;
   color: black;
   font-weight: 500;
 }
 
-.card .card__right .list-group-item {
+.card__product .card__right .list-group-item {
   inline-size: 70%;
 }
-.card .card__right .list-group-item i {
+.card__product .card__right .list-group-item i {
   color: #4786fe;
   margin-right: 10px;
 }
-.card .btn {
+.card__product .btn {
   background-color: #4786fe;
   color: white;
   border-radius: 15px;
   margin: 15px 10px 30px;
 }
 
-.card .btn-group p {
-    margin: 10px 20px;
-  }
-  
+.card__product .btn-group p {
+  margin: 10px 20px;
+}
 
 icon-shape {
   display: inline-flex;
@@ -65,10 +62,27 @@ icon-shape {
   height: 2rem;
 }
 
-
-
-.card .card__right .card__content img {
+.card__product .card__right .card__content img {
   width: 30px;
   height: 30px;
   margin: 5px;
+}
+
+
+/* Media query for small screens (e.g., smartphones) */
+@media (max-width: 768px) {
+  .card__product {
+    width: 100%;
+    align-items: center;
+  }
+
+  /* Adjust styles for small screens here */
+  .card__product .card__right .card-title {
+    font-size: 18px;
+    inline-size: 100%;
+  }
+
+  .card__product .btn {
+    margin: 15px auto;
+  }
 }
