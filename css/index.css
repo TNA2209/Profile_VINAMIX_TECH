@@ -197,6 +197,7 @@ html *::-webkit-scrollbar-track {
 }
 
 #navbarInstruction .dropdown-item {
+    font-size: 14px;
     color: white;
     transition: all 0.5s;
 }
@@ -1266,14 +1267,14 @@ footer {
 
 @media (max-width: 768px) {
     .welcome__content>p {
-        font-size: 1.4rem;
+        font-size: 1rem;
         padding-bottom: 2rem;
     }
     .welcome__item h3 {
-        font-size: 1.6rem;
+        font-size: 1rem;
     }
     .welcome__item h4 {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
     .welcome__item p {
         font-size: 1rem;
@@ -1285,7 +1286,7 @@ footer {
 
 @media (max-width: 480px) {
     .welcome__content>p {
-        font-size: 1.3rem;
+        font-size: 1rem;
         padding-bottom: 1rem;
     }
     .welcome__item h3 {
